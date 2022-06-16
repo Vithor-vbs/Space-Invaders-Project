@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(sprites/background.gif);
+}
+
+.vidas-texto {
+  color: white;
+  font-family: "Courier New", monospace;
+  position: absolute;
+  left: 630px;
+  bottom: 2px;
+  font-size: 16px;
+}
+
+.vidas-sprite {
+  position: absolute;
+  bottom: 0px;
+  left: 700px;
+}
+
+.perder-vida {
+  animation: fadein 1s ease-in-out;
+}
+
+.sumir {
+  opacity: 0;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
